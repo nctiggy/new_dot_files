@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Enpass Error</title>
+        <link rel="stylesheet" href="../commonCSS/enpass_error.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+      <div class="container" id = "container" style="display : none;">
+           <h1 id="header">Enpass Connection Error</h1>
+           <p id="description">Please start Enpass desktop app and make sure you have checked "Enable Browser Extension" in Enpass Preferences, before using Enpass Browser Extension.</p>
+           <div id="hint">
+               <img src = "" alt="screenshot" id = "screenshot"/>
+           </div>
+           
+           <div id="log_header" class="log_header">
+               <h2 id = "diagnostic_header"><img src="../images/up-arrow.png" alt="triangle" class="toggle-arrow toggle-up" /> Diagnostics</h2>
+           </div>
+           <div id="log_container" style="display:none;">
+
+                <div style = "border: 1px solid #e5e5e5;">
+                   <div id="log_desc" class="log_desc">
+                   </div>
+                </div>
+
+
+                <div id="log_btn_container">
+                    <a href="#" id = "send_log_btn">Copy</a>
+                </div>
+           </div>
+
+      </div>
+        <script src = "enpass_error.js"></script>
+    </body>
+</html>

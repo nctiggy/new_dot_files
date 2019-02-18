@@ -1,0 +1,70 @@
+VirtualBox XPCOM Server 5.2.14_Gentoo r122571 linux.amd64 (Sep 29 2018 19:56:52) release log
+00:00:00.000211 main     Log opened 2018-09-30T04:14:30.272302000Z
+00:00:00.000213 main     Build Type: release
+00:00:00.000216 main     OS Product: Linux
+00:00:00.000217 main     OS Release: 4.14.65-gentoo
+00:00:00.000218 main     OS Version: #26 SMP Fri Sep 28 08:55:08 PDT 2018
+00:00:00.000239 main     DMI Product Name: XPS 13 9350
+00:00:00.000246 main     DMI Product Version: 
+00:00:00.000285 main     Host RAM: 7808MB (7.6GB) total, 7556MB (7.3GB) available
+00:00:00.000289 main     Executable: /usr/lib64/virtualbox/VBoxSVC
+00:00:00.000290 main     Process ID: 18628
+00:00:00.000291 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.001481 main     IPC socket path: /tmp/.vbox-craig-ipc/ipcd
+00:00:00.106298 nspr-2   VirtualBox: object creation starts
+00:00:00.106469 nspr-2   Home directory: '/home/craig/.config/VirtualBox'
+00:00:00.106956 nspr-2   Loading settings file "/home/craig/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.109653 nspr-2   USB: Unknown USB device detected (idVendor: 0x8087, idProduct: 0x0a2b)
+00:00:00.109777 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.114707 nspr-2   Failed to retrive disk info: getDiskName(/dev/mapper/vg01-rootfs) --> vg01-rootfs
+00:00:00.124980 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for docker_gwbridge: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.144030 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp58s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.145841 nspr-2   NAT: resolv.conf: nameserver 192.168.0.10
+00:00:00.145905 nspr-2   HostDnsMonitor: old information
+00:00:00.145914 nspr-2     no server entries
+00:00:00.145922 nspr-2     no domain set
+00:00:00.145928 nspr-2     no search string entries
+00:00:00.145935 nspr-2   HostDnsMonitor: new information
+00:00:00.145942 nspr-2     server 1: 192.168.0.10
+00:00:00.145951 nspr-2     no domain set
+00:00:00.145957 nspr-2     no search string entries
+00:00:00.145971 nspr-2   HostDnsMonitorProxy::notify
+00:00:00.146069 nspr-2   Failed to open "/dev/vboxdrvu", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:00:00.147296 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.152712 nspr-2   Loading settings file "/home/craig/VirtualBox VMs/ubuntu/ubuntu.vbox" with version "1.16-linux"
+00:00:00.158787 nspr-2   VirtualBox: object created
+00:00:15.451994 nspr-4   Failed to open "/dev/vboxdrvu", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:00:15.466197 nspr-4   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for docker_gwbridge: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:15.473597 nspr-4   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp58s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:19.903107 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_OBJECT_STATE (0x80bb0007) aIID={85cd948e-a71f-4289-281e-0ca7ad48cd89} aComponent={MachineWrap} aText={The machine 'ubuntu' is already locked by a session (or being locked or unlocked)}, preserve=false aResultDetail=0
+00:00:19.962148 nspr-5   Load [/usr/lib64/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] rc VINF_SUCCESS
+00:00:20.114880 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85cd948e-a71f-4289-281e-0ca7ad48cd89} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=0
+00:00:20.164844 nspr-7   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for docker_gwbridge: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:20.173406 nspr-7   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp58s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:02:34.973914 nspr-7   Saving settings file "/home/craig/VirtualBox VMs/ubuntu/ubuntu.vbox" with version "1.16-linux"
+00:02:35.081452 nspr-6   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85cd948e-a71f-4289-281e-0ca7ad48cd89} aComponent={SessionMachine} aText={The object is not ready}, preserve=false aResultDetail=0
+00:02:35.086603 nspr-6   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85cd948e-a71f-4289-281e-0ca7ad48cd89} aComponent={SessionMachine} aText={The object is not ready}, preserve=false aResultDetail=0
+00:02:47.157517 nspr-8   Saving settings file "/home/craig/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:02:47.274577 nspr-4   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={4afe423b-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:02:59.407957 nspr-6   Failed to open "/dev/vboxdrvu", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:02:59.410166 nspr-8   Failed to open "/dev/vboxdrvu", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:04:08.833169 nspr-4   Saving settings file "/home/craig/VirtualBox VMs/ubuntu/ubuntu.vbox" with version "1.16-linux"
+00:04:08.951541 nspr-2   Saving settings file "/home/craig/VirtualBox VMs/ubuntu/ubuntu.vbox" with version "1.16-linux"
+00:04:08.961717 nspr-2   Saving settings file "/home/craig/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:04:08.981765 nspr-7   Saving settings file "/home/craig/VirtualBox VMs/ubuntu/ubuntu.vbox" with version "1.16-linux"
+00:04:09.016956 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85cd948e-a71f-4289-281e-0ca7ad48cd89} aComponent={MachineWrap} aText={This machine does not have any snapshots}, preserve=false aResultDetail=0
+00:04:12.687169 nspr-9   Failed to open "/dev/vboxdrvu", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:04:12.853475 nspr-4   Failed to open "/dev/vboxdrvu", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:04:12.866000 nspr-9   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for docker_gwbridge: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:04:12.872876 nspr-9   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp58s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:04:12.879304 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for docker_gwbridge: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:04:12.889931 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp58s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:04:58.667929 nspr-3   Saving settings file "/home/craig/VirtualBox VMs/ubuntu/ubuntu.vbox" with version "1.16-linux"
+00:05:03.455925 nspr-5   Load [/usr/lib64/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] rc VINF_SUCCESS
+00:05:03.632617 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85cd948e-a71f-4289-281e-0ca7ad48cd89} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=0
+00:05:03.644262 nspr-4   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for docker_gwbridge: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:05:03.656439 nspr-4   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp58s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:05:06.594723 nspr-3   Saving settings file "/home/craig/VirtualBox VMs/ubuntu/ubuntu.vbox" with version "1.16-linux"
+00:05:06.687760 nspr-2   Failed to open "/dev/vboxdrvu", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:05:06.708614 nspr-8   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for docker_gwbridge: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:05:06.716067 nspr-8   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp58s0: VBoxNetAdpCtl: ioctl failed: Operation not supported

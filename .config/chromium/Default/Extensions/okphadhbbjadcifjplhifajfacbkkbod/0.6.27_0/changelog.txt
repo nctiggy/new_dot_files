@@ -1,0 +1,348 @@
+Version 0.6.27
+--------------
+omgwtfnzbs.me: Cleaned up Category Discovery (thanks omgstaff)
+
+Version 0.6.26
+--------------
+omgwtfnzbs.me: Updated getUserName and getApiKey (thanks omgstaff)
+
+Version 0.6.25
+--------------
+Fixed omgwtfnzbs.me: username changed in HTML (thanks omgstaff)
+
+Version 0.6.24
+--------------
+Fixed omgwtfnzbs.me: nzbId length has increased on site from 5 to 6 (thanks omgstaff)
+
+Version 0.6.23
+--------------
+Fixed omgwtfnzbs.me: send Category now on browse.php/details.php/trends.php pages; support for Cart; fixed README/label (thanks omgstaff)
+
+Version 0.6.22
+--------------
+Added category discovery for details.php and trends.php on their website so that it sends to sabnzb with the proper category. Also the TLD has changed from omgwtfnzbs.org to omgwtfnzbs.me (thanks gewfie)
+
+Version 0.6.20
+--------------
+(again) Fixed nzbclub integration (thanks Mathias Rohnstock)
+
+Version 0.6.19
+--------------
+Fixed nzbclub integration (thanks Mathias Rohnstock)
+
+Version 0.6.18
+--------------
+Corrected support for animenzb.com - Incorrectly named provider
+Removed exec bit from usenet4ever provider
+
+Version 0.6.17
+--------------
+Added support for animenzb.com (credit PPSlim)
+
+Version 0.6.16
+--------------
+Fixed omgwtfnzbs.org support
+
+Version 0.6.15
+--------------
+Added support for usenet4ever.info (thanks Marat Bedoev)
+Replaced (deprecated) webkit notifications with Chrome notifications (thanks Marat Bedoev)
+Option to disable Newznab auto detection (thanks Omri Iluz)
+
+Version 0.6.14
+--------------
+Added support for animezb.com (thanks Benni-chan)
+
+Version 0.6.13
+--------------
+Fix icon size on dognzbd.
+
+Version 0.6.11
+--------------
+More bugfixes for dognzbd. Fixes #96, #102.
+
+Version 0.6.10
+--------------
+Bugfix for dognzbd. Fixes #106.
+
+Version 0.6.9
+-------------
+Change notification mechanism to use a single timeout handler, rather than one per notification. Fixes #99.
+Bugfix for some Newznab themes: show the notification over other UI elements
+Added setting to not send any categories to SAB, and let it try to guess it from the .nzb content instead. Default to off for now (i.e. same behaviour as before)
+
+Version 0.6.8
+-------------
+Improved nzbs.org support (and all Newznab at the same time)
+Removed support for nzbx.co (read here to know why it shut down: http://www.dslreports.com/forum/r28443268-nzbx.co-shuts-down)
+Removed support for nzbsrus.com (read here to know why it shut down: http://sickbeard.com/forums/viewtopic.php?f=3&t=7596)
+Added support for nzb-rss.com (thanks brandon-barker)
+
+Version 0.6.7
+-------------
+Improved Newznab support (tested on nzb.su): one-click links in details page, fixed cart, fixed double links
+Added support for omgwtfnzbs.org: added categories (thanks brandon-barker)
+
+Version 0.6.6
+-------------
+Added support for omgwtfnzbs.org (thanks brandon-barker)
+
+Version 0.6.5
+-------------
+Added support for nzbsrus.com categories
+Removed nzb.su from the list of providers; it's now a Newznab indexer
+
+Version 0.6.4
+-------------
+...
+
+Version 0.6.3
+-------------
+Added support for mega.nzbx.co
+Improvement: Added multi-select to nzbx.co
+Bugfix: nzbx.co no category failure fixed
+
+Version 0.6.2
+-------------
+Re-added: dognzb.cr
+
+Version 0.6.1
+-------------
+Re-added: nzb.su
+
+Version 0.6.0
+-------------
+New feature: Settings are now synced to and from your Google account, if you enabled sync in Chrome.
+Improvement: One-click support for binsearch.info
+Improvement: Added category for nzbx.co one-click
+Removed: nzb.su, mysterbin.com support (sites are gone)
+
+Version 0.5.22
+--------------
+Improvement: Better looking icons, in particular in the action bar
+Improvement: Ability to pause for X minutes (thanks jsterken)
+Improvement: Code improvement on how domain and protocol are handled, when sending a link to SAB. Solves part of the NZBClub problem. (thanks jsterken)
+Bugfix: SAB icon would not change to the red error icons, when an error occurred when sending a link to SAB. (thanks jsterken)
+Bugfix: Newznab providers: when a cover has multiple releases, send the correct URL to SAB (was always sending the 1st release URL) (thanks jsterken)
+
+Version 0.5.21
+--------------
+Bugfix: Newznab sites: select all checkbox would break the 'Send to SAB' top button
+Improved fanzub support (thanks Benni-chan)
+Added support for nzbx.co (thanks sharkuw)
+
+Version 0.5.20
+--------------
+Shorter notifications timeout available (1, 2, 3, 5 seconds)
+Bugfix: right-click "Send link to SAB" never worked. Now it should work, at least on sites that don't require a login to download NZBs.
+Bugfix: support for arbitrary Newznab providers setting wasn't saved correctly.
+
+Version 0.5.19
+--------------
+Added support for arbitrary Newznab providers.
+Newznab (nzbs.org, etc.): Added 1-click button in Cover view
+Removed NZBMatrix & Newzbin settings (sites are gone).
+
+Version 0.5.18
+--------------
+Better nzb.su implementation (thanks Benni-chan)
+Removed NZBMatrix & Newzbin support (sites are gone)
+
+Version 0.5.17
+--------------
+Bugfix: popup was broken when an item was paused. (thanks eegeeZA)
+Bugfix: Fixed download button on dognzb.cr (thanks VTWoods)
+
+Version 0.5.16
+--------------
+Bugfix: Remove unneeded labels on graph
+
+Version 0.5.15
+--------------
+More NZBRus fixes
+Fix for missing notification icon
+
+Version 0.5.14
+--------------
+Added ability to override categories from popup menu (thanks mattb3)
+Fix for non-working NZBRus (thanks rolfwessels)
+
+Version 0.5.13
+--------------
+Added support for mysterbin.com (thanks mattb3)
+Improvement: Somehow improved the graph. Doesn't show when empty, etc.
+Task: updated Chrome extension manifest to latest version (2). Previous version (1) will be deprecated in Chrome soon, so this was needed to keep the extension working.
+
+Version 0.5.12
+--------------
+Added support for yubse.com (thanks tofito)
+Added support for Newzxxx2.ch
+Bugfix: Don't send default category for NZBMatrix downloads
+
+Version 0.5.11
+--------------
+Bugfix: missing queued items and graph in popup
+
+Version 0.5.10
+--------------
+Bugfix: Missing profiles names from select box in popup
+
+Version 0.5.9
+-------------
+Added support for dognzb.cr (thanks to commits from wolrah & gboudreau)
+Added support for www.nzbhq.com
+Bugfix: Now working with the new nzbs.org (thanks to commits from wolrah, jdart & gboudreau)
+Bugfix: Always use https for binsearch.info URLs.
+
+Version 0.5.8
+-------------
+Change [Issue 124]: Added newzbin2.es and removed old newzbin.com
+
+Version 0.5.7
+-------------
+Change [Issue 37]: 1-Click on individual posts on newzbin, not just search list (Thanks fabian)
+Bugfix [Issue 107]: nzbxxx.com 1-click was not working due to incorrect API URL usage.
+
+Version 0.5.6
+-------------
+Feature: [Issue 85]: Save multiple SABnzbd connections with quick change option from popup.
+Bugfix: [Issue 87]: nzbsrus.com changed their HTML in the browse & search pages.
+
+Version 0.5.5
+-------------
+Feature: [Issue 51]: Max Speed for SABnzbd can now be set in the popup. You can press the ENTER key in the input field to accept the changes or click the "Set" button.
+Bugfix: [Issue 81]: nzb.su anime series page doesn't have 1-click.
+
+Version 0.5.4
+-------------
+Change: The "nice names" for binsearch.info have been simplified. Thanks to "thibaut....@gmail.com" for this.
+Change: The Categories section of the Configuration tab in Options now has a summary paragraph with a link to the Categories wiki page on our Google Code project page.
+Bugfix: (Regression) [Issue 77] "Open SABnzbd" link in the popup was not working for https connections.
+
+Version 0.5.3
+-------------
+Feature: New option to enable automatic authentication. This feature automatically provides your SABnzbd username & password to SABnzbd through URL parameters so you don't have to type in your username & password manually when you click the "Open SABnzbd" button in the popup. Enabled by default.
+Change: If options are changed in the extension, tabs currently open for indexer sites automatically pick up those changes. Previously the website had to be refreshed by the user to pick up changes in options (such as nzbxxx username & api key).
+
+Version 0.5.2
+-------------
+Bugfix: X-DNZB-Category was not working on compatible sites.
+Bugfix: NZBmatrix was not working in iframes (Issue 60)
+
+Version 0.5.1
+-------------
+Change: Fresh new icon (the smaller 16x16 icon remains the same)
+Change: 'Notification Timeout' setting now defaults to 10 seconds (previously defaulted to Disabled).
+Bugfix: (Regression) 'Enable Context Menu' option was not working.
+Bugfix: (Regression) binsearch.info wasn't working.
+Bugfix: Renamed the display options check boxes in settings to mean the reverse of what they meant before (i.e. Keeping them checked actually enables nice display names).
+Bugfix: (Regression) 'Pause Queue' popup option was missing.
+
+Version 0.5.0
+-------------
+Feature: "Send link to SABnzbd" link added to chrome context menu for http links. Note that this feature is not intended to be used on links that will require authentication.
+Feature: New setting in options page to enable/disable the new context menu.
+Feature: Added support for fanzub
+Feature: Completely redesigned Options page
+Change: Removed newzleech support since that website is down.
+Change: Extreme architecture change that fixes many bugs and improves stability.
+Bugfix: Fixed continuous memory leaks happening during refreshes.
+Bugfix: SabConnect++ no longer crashes after a period of time.
+Bugfix: Several script errors eliminated and stability improved.
+
+Version 0.4.12
+--------------
+New feature: Added 1-click NZB download for fanzub.com
+Improvement: Allow 1, 2 or 4 hours refresh rates, or disabling background refresh altogether
+Bugfix: fixing 1-click for nzbclub.com
+Bugfix: Missing 1-click downloads on binsearch.info Watchlist
+Bugfix: AJAX search results on nzbsrus.com didn't show the 1-click SAB icons
+
+Version 0.4.11
+--------------
+Bugfix: Now working in Chrome 12 (dev)
+
+Version 0.4.10
+--------------
+New feature: Added 1-click NZB download for nzb.su (Newznab).
+  Note: SABconnect++ won't send a category when using cover view. This is because those views don't display the categories.
+
+Version 0.4.9
+-------------
+Improvement: Timeout for notifications (to disappear) is now configurable. Default is to keep them open indefinitely.
+Improvement: Allow you to use the X-DNZB-Category HTTP header on sites that supports it (nzbs.org, Newzbin), instead of using the default auto-categorization. The X-DNZB-Category header will only contain the main category (eg. 'TV'), versus auto-categorization that will contain the full category name (eg. TV.x264) http://code.google.com/p/sabconnectplusplus/issues/detail?id=18
+Improvement: Added individual 1-click NZB download buttons to nzbindex.com http://code.google.com/p/sabconnectplusplus/issues/detail?id=20
+Improvement: Added option to use the NZB file name, instead of the full name displayed on the website, for nzbindex.com and binsearch.info http://code.google.com/p/sabconnectplusplus/issues/detail?id=20
+Bugfix: Show 'Download Failed' notifications instead of 'Download Complete' when appropriate.
+
+Version 0.4.8
+-------------
+New feature: "Download Complete" desktop notifications
+New feature: "Hard-coded category" & "Default category" options, to override NZB index site categories, or send a default when no category is found on the NZB index site.
+Bugfix: nzbs.org auto-categorization didn't work on homepage (Browse All NZBs)
+Bugfix: NZBXXX.com 1-click NZB download was not working; added Username & API Key options in the extension options to fix. http://code.google.com/p/sabconnectplusplus/issues/detail?id=12
+Bugfix: Some search results & subsequent results pages wouldn't show the 1-click NZB download buttons. http://code.google.com/p/sabconnectplusplus/issues/detail?id=11
+
+Version 0.4.7
+-------------
+Improvement: Auto-categorization for nzbs.org. Categories are named "Console.XBox360", "TV.x264", etc. and need to match a category NAME you have defined in SABnzbd. See http://code.google.com/p/sabconnectplusplus/wiki/Categories#nzbs.org for details.
+
+Version 0.4.6
+-------------
+Bugfix: 0.4.5 broke 1-click NZB download buttons on nzbs.org, in list view
+Bugfix: 1-click NZB download button on nzbs.org details page looked weird after click
+
+Version 0.4.5
+-------------
+Bugfix: bandwidth graph wasn't working; thanks to Sajid Anwar for the fix.
+New feature: Added 1-click NZB download for nzbindex.nl
+Improvement: Added 'Send selected to SABnzbd' buttons on nzbs.org, to send multiple NZBs to SAB in one click.
+Improvement: Preload graph image in the background to remove flickering.
+Improvement: Added manual refresh menu item.
+Improvement: Allow user to change refresh rate.
+Improvement: Number of developers working on SABconnect++ increased! Welcome Sajid Anwar!
+
+Version 0.4.4
+-------------
+New feature: Added 1-click NZB download for NZBsRus.com
+
+Version 0.4.3
+-------------
+Bugfix: newzbin.com "Send to SABnzbd" button was broken.
+New feature: Added 1-click NZB download for newzleech.com; thanks to johannespfau for the patch.
+New feature: Added 1-click NZB download to nzbs.org details page.
+Improvement: nzbs.org: Made it clearer that the SAB 1-click icon and the download link are distinct.
+Improvement: Removed badge text (# queued items) instead of displaying '0'.
+
+Version 0.4.2
+-------------
+New feature: double-click the toolbar icon to open SABnzbd.
+  Note: Chrome doesn't support this natively.
+  The extension tries to detect if you tried to open the popup twice fast enough, and will open SABnzbd if it detects you did.
+  You might want to continue clicking on the toolbar icon until a new tab opens, if just double-clicking doesn't work for you.
+Bugfix (Issue #1): one-click NZB button was missing from binsearch.net (same as binsearch.info); thanks evertbeurskens for the patch.
+Bugfix: "Enable Graph" option couldn't be disabled.
+
+Version 0.4.1
+-------------
+New feature: Added nzbindex.com 1-click NZB downloads
+             Auto-categorization: 1st group that appears in "Group" column on nzbindex.com will be sent as the Category. Make sure to create categories that have names equal to the groups you usually download from (eg. a.b.sounds.mp3.french). Sorry, but there's no way I can use the SABnzbd 'group' field using the API... :\
+			Bugfix: SABnzbd icons (used to send a NZB to SABnzbd) changed to 'fetching' (green arrows), but never changed to 'OK' (green logo). Cosmetic bugfix; the actual send operation worked fine.
+
+Version 0.4
+-----------
+New feature: Added nzbs.org 1-click NZB downloads (code comes from SABConnect, slightly modified) http://code.google.com/p/sabconnect/issues/detail?id=4
+New feature: Added binsearch.info 1-click NZB downloads. http://code.google.com/p/sabconnect/issues/detail?id=8
+             Auto-categorization: 1st group that appears in "Group" column on binsearch.info will be sent as the Category. Make sure to create categories that have names equal to the groups you usually download from (eg. a.b.sounds.mp3.french). Sorry, but there's no way I can use the SABnzbd 'group' field using the API... :\
+New feature: Thanks to SABnzbd 0.5.3, auto-categorization for NZBMatrix.com! :)
+             Documentation here: http://wiki.sabnzbd.org/configure-categories
+             Example SABnzbd categories you need to create: http://cl.ly/eec6e7308ee01f800b3d
+Improvement: Re-enabled the option to show a graph in popup.
+Bugfix: Fixed 1-click for all services in latest (dev) Chrome; it wasn't sending to SABnzbd anymore; was just downloading the NZB locally instead.
+Bugfix: Options page that wasn't working at all in latest (dev) Chrome.
+Bugfix: Options page checkboxes: trying to uncheck any service would 'appear' to not work: checkbox would still be checked when reloading the options page.
+Bugfix: Disabling a service in the options page didn't disable 1-click NZB downloads!
+Bugfix: Connection to SABnzbd now works even if the user chose to "Disable API-key" in SABnzbd settings.
+Bugfix: Popup always showed 'Resume queue' even if the queue wasn't paused.
+Bugfix: Status (at the top of popup) would stay red (paused color) if you paused then resumed.
+Bugfix: NZBMatrix.com download URLs had the hostname twice in them! http://code.google.com/p/sabconnect/issues/detail?id=9

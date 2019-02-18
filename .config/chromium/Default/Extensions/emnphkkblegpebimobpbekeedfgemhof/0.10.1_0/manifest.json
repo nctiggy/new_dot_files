@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "event.js", "global.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon128.png",
+      "default_popup": "popup.html",
+      "default_title": "Disable"
+   },
+   "content_security_policy": "script-src 'self' blob:; object-src 'self'",
+   "description": "Allow the browser to play HLS video urls (m3u8) 'natively'",
+   "icons": {
+      "128": "img/icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgIXZZJwUyRaFoBg2Wh8mClq4L/OT1tFgwijw0a74iL3a+vfxUPS90HsTyXD7fcQUA1qXcYGNHIYqbqlaO1C0tvCs628RdIUAWk7CfmUGMePFbHVBSlCOO2D5B2RzXfU6KRm3/9p2z/krjlnSsWlzg1Lc7EJDgo0WXp+/K4/wP3RjWIk2J/yIiERFKSDnVkfRvOeu0UgEeqo1RHasajHdx9FnfIMp4KnyM+gfZ2Gk70TcIjFF+481Rv7f1eT375PtWcRyY1WMGF++GJzYoGULOKOfgx88J4OJSoV4iO4IUytcm8k5vTBe/PG/pPOADybN4hAgAKUHuQ2CMQXB1yvvEQIDAQAB",
+   "manifest_version": 2,
+   "name": "Native HLS Playback",
+   "omnibox": {
+      "keyword": "m3u8"
+   },
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "tabs", "*://*/*.m3u8*", "webRequest", "webRequestBlocking", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.10.1",
+   "web_accessible_resources": [ "*.js", "*.html" ]
+}
