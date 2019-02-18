@@ -1,5 +1,0 @@
-source ~/.config/neomutt/gmail
-set mailcap_path =   "~/.config/neomutt/mailcap"
-auto_view =          "yes"
-alternative_order =  "no"
-set sidebar_visible = "yes"
