@@ -45,4 +45,4 @@ color15 = #e6e6e6
 
 [options]
 font = DejaVu Sans Mono for Powerline
-scrollback_lines = 10000
+scrollback_lines = 100000

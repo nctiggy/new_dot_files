@@ -18,6 +18,7 @@ alias slack='wey'
 alias acestream='/opt/acestream/start-engine --client-console &'
 
 export PATH="${PATH}:${HOME}/.local/bin/"
+(cat ~/.cache/wal/sequences &)
 
 # zplug section
 source ~/.zplug/init.zsh
@@ -28,6 +29,7 @@ zplug "plugins/sudo",   from:oh-my-zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
 zplug "lukechilds/zsh-nvm"
+zplug "gentoo/gentoo-zsh-completions", use:src
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -41,3 +43,5 @@ zplug load
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 SPACESHIP_CHAR_SYMBOL=
+
+alias config='/usr/bin/git --git-dir=/home/craig/.cfg/ --work-tree=/home/craig'

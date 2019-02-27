@@ -1,5 +1,3 @@
-#xrandr --output eDP1 --dpi 192
-xrdb -merge ~/.Xresources
-~/.fehbg &
-#compton -b
+xrdb -merge .Xresources
+wal -i ~/.config/nitrogen/001.png
 exec i3

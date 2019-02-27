@@ -29,6 +29,11 @@ set hlsearch
 
 set lazyredraw
 
+let g:terraform_fold_sections=1
+let g:terraform_align=1
+let g:terraform_remap_spacebar=1
+let g:terraform_fmt_on_save=1
+
 nnoremap <leader><space> :nohlsearch<CR>
 
 nnoremap j gj
@@ -39,6 +44,11 @@ nnoremap <F7> :call Flake8()<CR>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+set nowrap
 
 let g:pymode_python = 'python3'
 set list listchars=trail:.,extends:>
