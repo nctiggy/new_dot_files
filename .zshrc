@@ -26,6 +26,7 @@ source ~/.zplug/init.zsh
 zplug "tcnksm/docker-alias", use:zshrc
 zplug "plugins/git",   from:oh-my-zsh
 zplug "plugins/sudo",   from:oh-my-zsh
+zplug "plugins/kubectl",   from:oh-my-zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
 zplug "lukechilds/zsh-nvm"
