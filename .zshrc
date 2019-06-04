@@ -17,8 +17,8 @@ alias la='ls -la'
 alias slack='wey'
 alias acestream='/opt/acestream/start-engine --client-console &'
 
-export PATH="${PATH}:${HOME}/.local/bin/"
-(cat ~/.cache/wal/sequences &)
+export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/go/bin/"
+export EDITOR=/usr/bin/vim
 
 # zplug section
 source ~/.zplug/init.zsh

@@ -4,9 +4,33 @@ function! TrimWhiteSpace()
   ''
 endfunction
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 filetype off
-execute pathogen#infect()
-call pathogen#helptags()
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'pearofducks/ansible-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ekalinin/dockerfile.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'pangloss/vim-javascript'
+Plug 'hashivim/vim-terraform'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'kchmck/vim-coffee-script'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'plasticboy/vim-markdown'
+
+call plug#end()
+
 syntax enable
 filetype plugin indent on
 let mapleader=","
@@ -33,6 +57,8 @@ let g:terraform_fold_sections=1
 let g:terraform_align=1
 let g:terraform_remap_spacebar=1
 let g:terraform_fmt_on_save=1
+let g:ansible_name_highlight = 'b'
+let g:ansible_unindent_after_newline = 1
 
 nnoremap <leader><space> :nohlsearch<CR>
 

@@ -19,13 +19,14 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Source Code Pro Semibold:size=20;1"
+#font-0 = "Source Code Pro Semibold:size=20;1"
+font-0 = "URWGothic-Book:size=20;1"
 font-1 = "Font Awesome 5 Free:style=Solid:size=20;1"
 font-2 = "Font Awesome 5 Brands:size=20;1"
 
 modules-left = i3
 modules-center = date cpu
-modules-right = wlan eth battery powermenu
+modules-right = wlan eth alsa battery powermenu
 
 tray-position =
 ;tray-padding =
@@ -126,7 +127,7 @@ type = internal/alsa
 ; Soundcard to be used
 ; Usually in the format hw:# where # is the card number
 ; You can find the different card numbers in `/proc/asound/cards`
-master-soundcard = 0
+master-soundcard = hw:0
 ;speaker-soundcard = default
 ;headphone-soundcard = default
 
