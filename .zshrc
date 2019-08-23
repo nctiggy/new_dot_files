@@ -1,5 +1,5 @@
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/craig/.zshrc'
+zstyle :compinstall filename '${HOME}/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -27,10 +27,12 @@ zplug "tcnksm/docker-alias", use:zshrc
 zplug "plugins/git",   from:oh-my-zsh
 zplug "plugins/sudo",   from:oh-my-zsh
 zplug "plugins/kubectl",   from:oh-my-zsh
+zplug "plugins/helm",   from:oh-my-zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
 zplug "lukechilds/zsh-nvm"
 zplug "gentoo/gentoo-zsh-completions", use:src
+zplug "sergiubodiu/fly-zsh-autocomplete-plugin"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -45,4 +47,4 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 SPACESHIP_CHAR_SYMBOL=
 
-alias config='/usr/bin/git --git-dir=/home/craig/.cfg/ --work-tree=/home/craig'
+alias config='/usr/bin/git --git-dir=${HOME}/.cfg/ --work-tree=${HOME}'
