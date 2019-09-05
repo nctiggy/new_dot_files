@@ -11,7 +11,7 @@ SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 
 # autocolor ls output
-alias ls='ls -F'
+alias ls='ls -F --color=auto'
 alias ll='ls -ltra'
 alias la='ls -la'
 alias slack='wey'
@@ -19,12 +19,14 @@ alias acestream='/opt/acestream/start-engine --client-console &'
 
 export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/go/bin/"
 export EDITOR=/usr/bin/vim
+export CLICOLOR=1
 
 # zplug section
 source ~/.zplug/init.zsh
 
 zplug "tcnksm/docker-alias", use:zshrc
 zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/minikube",   from:oh-my-zsh
 zplug "plugins/sudo",   from:oh-my-zsh
 zplug "plugins/kubectl",   from:oh-my-zsh
 zplug "plugins/helm",   from:oh-my-zsh
