@@ -16,6 +16,7 @@ alias ll='ls -ltra'
 alias la='ls -la'
 alias slack='wey'
 alias acestream='/opt/acestream/start-engine --client-console &'
+eval $(thefuck --alias)
 
 export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/go/bin/"
 export EDITOR=/usr/bin/vim
