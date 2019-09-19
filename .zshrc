@@ -16,7 +16,6 @@ alias ll='ls -ltra'
 alias la='ls -la'
 alias slack='wey'
 alias acestream='/opt/acestream/start-engine --client-console &'
-eval $(thefuck --alias)
 
 export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/go/bin/"
 export EDITOR=/usr/bin/vim
@@ -35,8 +34,8 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
 zplug "lukechilds/zsh-nvm"
 zplug "gentoo/gentoo-zsh-completions", use:src
-zplug "sergiubodiu/fly-zsh-autocomplete-plugin"
-
+zplug "StackExchange/blackbox"
+zplug "zsh-users/zsh-completions"
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
@@ -51,3 +50,5 @@ bindkey '^[[B' history-substring-search-down
 SPACESHIP_CHAR_SYMBOL=
 
 alias config='/usr/bin/git --git-dir=${HOME}/.cfg/ --work-tree=${HOME}'
+
+eval $(thefuck --alias)

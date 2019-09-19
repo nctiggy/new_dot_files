@@ -44,4 +44,4 @@ rofi.padding: 5
 rofi.fixed-num-lines: true
 rofi.hide-scrollbar: true
 
-Xft.dpi: 192
+Xft.dpi: 196
