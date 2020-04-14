@@ -28,6 +28,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'kchmck/vim-coffee-script'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'plasticboy/vim-markdown'
+Plug 'PProvost/vim-ps1'
 
 call plug#end()
 
@@ -100,6 +101,7 @@ augroup configgroup
     autocmd FileType python setlocal commentstring=#\ %s
     autocmd FileType python setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'^\s*#'
     autocmd BufEnter *.zsh-theme setlocal filetype=zsh
+    autocmd BufEnter *.tmpl setlocal filetype=yml
     autocmd BufEnter Makefile setlocal noexpandtab
     autocmd BufEnter *.sh setlocal tabstop=2
     autocmd BufEnter *.sh setlocal shiftwidth=2

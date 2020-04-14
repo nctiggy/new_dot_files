@@ -11,7 +11,7 @@ SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 
 # autocolor ls output
-alias ls='ls -F --color=auto'
+alias ls='ls -F'
 alias ll='ls -ltra'
 alias la='ls -la'
 alias slack='wey'
