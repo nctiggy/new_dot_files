@@ -50,5 +50,3 @@ bindkey '^[[B' history-substring-search-down
 SPACESHIP_CHAR_SYMBOL=
 
 alias config='/usr/bin/git --git-dir=${HOME}/.cfg/ --work-tree=${HOME}'
-
-eval $(thefuck --alias)
