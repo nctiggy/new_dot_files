@@ -38,6 +38,7 @@ let mapleader=","
 
 colorscheme dracula
 
+set mouse=r
 set tabstop=4
 set softtabstop=4
 set expandtab
@@ -95,6 +96,9 @@ augroup configgroup
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal commentstring=#\ %s
+    autocmd FileType yaml setlocal tabstop=2
+    autocmd FileType yaml setlocal shiftwidth=2
+    autocmd FileType yaml setlocal softtabstop=2
     autocmd FileType javascript setlocal tabstop=4
     autocmd FileType javascript setlocal shiftwidth=4
     autocmd FileType javascript setlocal softtabstop=4
