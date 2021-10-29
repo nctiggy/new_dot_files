@@ -80,6 +80,8 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 SPACESHIP_CHAR_SYMBOL="ﰁ "
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
